@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F84514A25B1B1F40004C7C0 /* ALTThirdPartySharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84514825B1B1F40004C7C0 /* ALTThirdPartySharing.m */; };
+		6FAB78BC2636DDAF00773869 /* ALTLinkResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB78BA2636DDAE00773869 /* ALTLinkResolution.m */; };
+		6FBEE91A24E4218C00FEF3F1 /* ALTUrlStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEE91824E4218B00FEF3F1 /* ALTUrlStrategy.m */; };
+		9D01676920FF812B0029CFFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D01676820FF812B0029CFFF /* Assets.xcassets */; };
+		9D01677020FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D01676F20FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D01677520FF812B0029CFFF /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D01677420FF812B0029CFFF /* Messages.framework */; };
+		9D01677920FF812B0029CFFF /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01677820FF812B0029CFFF /* MessagesViewController.m */; };
+		9D01677C20FF812B0029CFFF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D01677A20FF812B0029CFFF /* MainInterface.storyboard */; };
+		9D01677E20FF812C0029CFFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D01677D20FF812C0029CFFF /* Assets.xcassets */; };
+		9D01685720FF88F60029CFFF /* ALTTimerOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01681420FF88F60029CFFF /* ALTTimerOnce.m */; };
+		9D01685820FF88F60029CFFF /* ALTAttributionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01681520FF88F60029CFFF /* ALTAttributionHandler.m */; };
+		9D01685920FF88F60029CFFF /* ALTRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01681820FF88F60029CFFF /* ALTRequestHandler.m */; };
+		9D01685B20FF88F60029CFFF /* ALTSdkClickHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01681C20FF88F60029CFFF /* ALTSdkClickHandler.m */; };
+		9D01685C20FF88F60029CFFF /* ALTEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01681E20FF88F60029CFFF /* ALTEvent.m */; };
+		9D01685D20FF88F60029CFFF /* ALTSessionSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01682220FF88F60029CFFF /* ALTSessionSuccess.m */; };
+		9D01685E20FF88F60029CFFF /* ALTEventFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01682320FF88F60029CFFF /* ALTEventFailure.m */; };
+		9D01685F20FF88F60029CFFF /* ALTEventSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01682520FF88F60029CFFF /* ALTEventSuccess.m */; };
+		9D01686020FF88F60029CFFF /* ALTActivityState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01682620FF88F60029CFFF /* ALTActivityState.m */; };
+		9D01686120FF88F60029CFFF /* ALTSessionFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01682720FF88F60029CFFF /* ALTSessionFailure.m */; };
+		9D01686220FF88F60029CFFF /* ALTTimerCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01682B20FF88F60029CFFF /* ALTTimerCycle.m */; };
+		9D01686320FF88F60029CFFF /* ALTSessionParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01682C20FF88F60029CFFF /* ALTSessionParameters.m */; };
+		9D01686420FF88F60029CFFF /* ALTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01682D20FF88F60029CFFF /* ALTLogger.m */; };
+		9D01686520FF88F60029CFFF /* ALTBackoffStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01682E20FF88F60029CFFF /* ALTBackoffStrategy.m */; };
+		9D01686620FF88F60029CFFF /* Alltrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01683020FF88F60029CFFF /* Alltrack.m */; };
+		9D01686720FF88F60029CFFF /* ALTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01683420FF88F60029CFFF /* ALTConfig.m */; };
+		9D01686820FF88F60029CFFF /* ALTPackageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01683520FF88F60029CFFF /* ALTPackageHandler.m */; };
+		9D01686920FF88F60029CFFF /* ALTActivityKind.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01683820FF88F60029CFFF /* ALTActivityKind.m */; };
+		9D01686A20FF88F60029CFFF /* NSString+ALTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01683B20FF88F60029CFFF /* NSString+ALTAdditions.m */; };
+		9D01686B20FF88F60029CFFF /* NSData+ALTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01683D20FF88F60029CFFF /* NSData+ALTAdditions.m */; };
+		9D01686D20FF88F60029CFFF /* ALTAttribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01684120FF88F60029CFFF /* ALTAttribution.m */; };
+		9D01686F20FF88F60029CFFF /* ALTActivityPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01684420FF88F60029CFFF /* ALTActivityPackage.m */; };
+		9D01687020FF88F60029CFFF /* ALTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01684520FF88F60029CFFF /* ALTUtil.m */; };
+		9D01687120FF88F60029CFFF /* ALTAlltrackFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01684820FF88F60029CFFF /* ALTAlltrackFactory.m */; };
+		9D01687220FF88F60029CFFF /* ALTResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01684B20FF88F60029CFFF /* ALTResponseData.m */; };
+		9D01687320FF88F60029CFFF /* ALTPackageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01684D20FF88F60029CFFF /* ALTPackageBuilder.m */; };
+		9D01687420FF88F60029CFFF /* ALTUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01684E20FF88F60029CFFF /* ALTUserDefaults.m */; };
+		9D01687620FF88F60029CFFF /* ALTActivityHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D01685420FF88F60029CFFF /* ALTActivityHandler.m */; };
+		9D2F241A2447DE4700B7CA90 /* ALTSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F24192447DE4700B7CA90 /* ALTSubscription.m */; };
+		9D3A2AE72626518E00BD6E44 /* ALTAdRevenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A2AE62626518E00BD6E44 /* ALTAdRevenue.m */; };
+		9D49D177290FEC2000042345 /* ALTSKAdNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D49D176290FEC2000042345 /* ALTSKAdNetwork.m */; };
+		9DF38246260E9E2A0033F5A1 /* NSNumber+ALTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF38245260E9E2A0033F5A1 /* NSNumber+ALTAdditions.m */; };
+		9DF92DA82630EFC1000FC3FC /* ALTPackageParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF92DA62630EFC0000FC3FC /* ALTPackageParams.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D01677120FF812B0029CFFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D01675F20FF81280029CFFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D01676E20FF812B0029CFFF;
+			remoteInfo = "AlltrackExample-iMessage MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D01678520FF812C0029CFFF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D01677020FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6F84514825B1B1F40004C7C0 /* ALTThirdPartySharing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTThirdPartySharing.m; sourceTree = "<group>"; };
+		6F84514925B1B1F40004C7C0 /* ALTThirdPartySharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTThirdPartySharing.h; sourceTree = "<group>"; };
+		6FAB78BA2636DDAE00773869 /* ALTLinkResolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTLinkResolution.m; sourceTree = "<group>"; };
+		6FAB78BB2636DDAE00773869 /* ALTLinkResolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTLinkResolution.h; sourceTree = "<group>"; };
+		6FBEE91824E4218B00FEF3F1 /* ALTUrlStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTUrlStrategy.m; sourceTree = "<group>"; };
+		6FBEE91924E4218B00FEF3F1 /* ALTUrlStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTUrlStrategy.h; sourceTree = "<group>"; };
+		9D01676520FF81280029CFFF /* AlltrackExample-iMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AlltrackExample-iMessage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D01676820FF812B0029CFFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D01676A20FF812B0029CFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D01676F20FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AlltrackExample-iMessage MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D01677420FF812B0029CFFF /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		9D01677720FF812B0029CFFF /* MessagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		9D01677820FF812B0029CFFF /* MessagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		9D01677B20FF812B0029CFFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9D01677D20FF812C0029CFFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D01677F20FF812C0029CFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D01681220FF88F60029CFFF /* ALTConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTConfig.h; sourceTree = "<group>"; };
+		9D01681420FF88F60029CFFF /* ALTTimerOnce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTTimerOnce.m; sourceTree = "<group>"; };
+		9D01681520FF88F60029CFFF /* ALTAttributionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTAttributionHandler.m; sourceTree = "<group>"; };
+		9D01681620FF88F60029CFFF /* Alltrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alltrack.h; sourceTree = "<group>"; };
+		9D01681720FF88F60029CFFF /* ALTActivityPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTActivityPackage.h; sourceTree = "<group>"; };
+		9D01681820FF88F60029CFFF /* ALTRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTRequestHandler.m; sourceTree = "<group>"; };
+		9D01681A20FF88F60029CFFF /* ALTAttribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTAttribution.h; sourceTree = "<group>"; };
+		9D01681C20FF88F60029CFFF /* ALTSdkClickHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSdkClickHandler.m; sourceTree = "<group>"; };
+		9D01681D20FF88F60029CFFF /* ALTActivityKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTActivityKind.h; sourceTree = "<group>"; };
+		9D01681E20FF88F60029CFFF /* ALTEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTEvent.m; sourceTree = "<group>"; };
+		9D01681F20FF88F60029CFFF /* ALTPackageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTPackageHandler.h; sourceTree = "<group>"; };
+		9D01682020FF88F60029CFFF /* ALTPackageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTPackageBuilder.h; sourceTree = "<group>"; };
+		9D01682120FF88F60029CFFF /* ALTResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTResponseData.h; sourceTree = "<group>"; };
+		9D01682220FF88F60029CFFF /* ALTSessionSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSessionSuccess.m; sourceTree = "<group>"; };
+		9D01682320FF88F60029CFFF /* ALTEventFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTEventFailure.m; sourceTree = "<group>"; };
+		9D01682420FF88F60029CFFF /* ALTAlltrackFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTAlltrackFactory.h; sourceTree = "<group>"; };
+		9D01682520FF88F60029CFFF /* ALTEventSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTEventSuccess.m; sourceTree = "<group>"; };
+		9D01682620FF88F60029CFFF /* ALTActivityState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTActivityState.m; sourceTree = "<group>"; };
+		9D01682720FF88F60029CFFF /* ALTSessionFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSessionFailure.m; sourceTree = "<group>"; };
+		9D01682820FF88F60029CFFF /* ALTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTUtil.h; sourceTree = "<group>"; };
+		9D01682A20FF88F60029CFFF /* ALTActivityHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTActivityHandler.h; sourceTree = "<group>"; };
+		9D01682B20FF88F60029CFFF /* ALTTimerCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTTimerCycle.m; sourceTree = "<group>"; };
+		9D01682C20FF88F60029CFFF /* ALTSessionParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSessionParameters.m; sourceTree = "<group>"; };
+		9D01682D20FF88F60029CFFF /* ALTLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTLogger.m; sourceTree = "<group>"; };
+		9D01682E20FF88F60029CFFF /* ALTBackoffStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTBackoffStrategy.m; sourceTree = "<group>"; };
+		9D01682F20FF88F60029CFFF /* ALTUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTUserDefaults.h; sourceTree = "<group>"; };
+		9D01683020FF88F60029CFFF /* Alltrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alltrack.m; sourceTree = "<group>"; };
+		9D01683120FF88F60029CFFF /* ALTAttributionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTAttributionHandler.h; sourceTree = "<group>"; };
+		9D01683220FF88F60029CFFF /* ALTTimerOnce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTTimerOnce.h; sourceTree = "<group>"; };
+		9D01683420FF88F60029CFFF /* ALTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTConfig.m; sourceTree = "<group>"; };
+		9D01683520FF88F60029CFFF /* ALTPackageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTPackageHandler.m; sourceTree = "<group>"; };
+		9D01683620FF88F60029CFFF /* ALTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTEvent.h; sourceTree = "<group>"; };
+		9D01683720FF88F60029CFFF /* ALTSdkClickHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSdkClickHandler.h; sourceTree = "<group>"; };
+		9D01683820FF88F60029CFFF /* ALTActivityKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTActivityKind.m; sourceTree = "<group>"; };
+		9D01683B20FF88F60029CFFF /* NSString+ALTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ALTAdditions.m"; sourceTree = "<group>"; };
+		9D01683D20FF88F60029CFFF /* NSData+ALTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ALTAdditions.m"; sourceTree = "<group>"; };
+		9D01683E20FF88F60029CFFF /* NSData+ALTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ALTAdditions.h"; sourceTree = "<group>"; };
+		9D01684020FF88F60029CFFF /* NSString+ALTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ALTAdditions.h"; sourceTree = "<group>"; };
+		9D01684120FF88F60029CFFF /* ALTAttribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTAttribution.m; sourceTree = "<group>"; };
+		9D01684320FF88F60029CFFF /* ALTRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTRequestHandler.h; sourceTree = "<group>"; };
+		9D01684420FF88F60029CFFF /* ALTActivityPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTActivityPackage.m; sourceTree = "<group>"; };
+		9D01684520FF88F60029CFFF /* ALTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTUtil.m; sourceTree = "<group>"; };
+		9D01684620FF88F60029CFFF /* ALTSessionFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSessionFailure.h; sourceTree = "<group>"; };
+		9D01684720FF88F60029CFFF /* ALTActivityState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTActivityState.h; sourceTree = "<group>"; };
+		9D01684820FF88F60029CFFF /* ALTAlltrackFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTAlltrackFactory.m; sourceTree = "<group>"; };
+		9D01684920FF88F60029CFFF /* ALTEventSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTEventSuccess.h; sourceTree = "<group>"; };
+		9D01684A20FF88F60029CFFF /* ALTEventFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTEventFailure.h; sourceTree = "<group>"; };
+		9D01684B20FF88F60029CFFF /* ALTResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTResponseData.m; sourceTree = "<group>"; };
+		9D01684C20FF88F60029CFFF /* ALTSessionSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSessionSuccess.h; sourceTree = "<group>"; };
+		9D01684D20FF88F60029CFFF /* ALTPackageBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTPackageBuilder.m; sourceTree = "<group>"; };
+		9D01684E20FF88F60029CFFF /* ALTUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTUserDefaults.m; sourceTree = "<group>"; };
+		9D01684F20FF88F60029CFFF /* ALTBackoffStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTBackoffStrategy.h; sourceTree = "<group>"; };
+		9D01685020FF88F60029CFFF /* ALTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTLogger.h; sourceTree = "<group>"; };
+		9D01685120FF88F60029CFFF /* ALTSessionParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSessionParameters.h; sourceTree = "<group>"; };
+		9D01685320FF88F60029CFFF /* ALTTimerCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTTimerCycle.h; sourceTree = "<group>"; };
+		9D01685420FF88F60029CFFF /* ALTActivityHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTActivityHandler.m; sourceTree = "<group>"; };
+		9D2F24182447DE4700B7CA90 /* ALTSubscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSubscription.h; sourceTree = "<group>"; };
+		9D2F24192447DE4700B7CA90 /* ALTSubscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSubscription.m; sourceTree = "<group>"; };
+		9D3A2AE52626518E00BD6E44 /* ALTAdRevenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTAdRevenue.h; sourceTree = "<group>"; };
+		9D3A2AE62626518E00BD6E44 /* ALTAdRevenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTAdRevenue.m; sourceTree = "<group>"; };
+		9D49D175290FEC2000042345 /* ALTSKAdNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSKAdNetwork.h; sourceTree = "<group>"; };
+		9D49D176290FEC2000042345 /* ALTSKAdNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSKAdNetwork.m; sourceTree = "<group>"; };
+		9DF38244260E9E2A0033F5A1 /* NSNumber+ALTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ALTAdditions.h"; sourceTree = "<group>"; };
+		9DF38245260E9E2A0033F5A1 /* NSNumber+ALTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ALTAdditions.m"; sourceTree = "<group>"; };
+		9DF92DA62630EFC0000FC3FC /* ALTPackageParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTPackageParams.m; sourceTree = "<group>"; };
+		9DF92DA72630EFC0000FC3FC /* ALTPackageParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTPackageParams.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D01676C20FF812B0029CFFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D01677520FF812B0029CFFF /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D01675E20FF81280029CFFF = {
+			isa = PBXGroup;
+			children = (
+				9D01676720FF81280029CFFF /* AlltrackExample-iMessage */,
+				9D01677620FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension */,
+				9D01677320FF812B0029CFFF /* Frameworks */,
+				9D01676620FF81280029CFFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D01676620FF81280029CFFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D01676520FF81280029CFFF /* AlltrackExample-iMessage.app */,
+				9D01676F20FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D01676720FF81280029CFFF /* AlltrackExample-iMessage */ = {
+			isa = PBXGroup;
+			children = (
+				9D01676820FF812B0029CFFF /* Assets.xcassets */,
+				9D01676A20FF812B0029CFFF /* Info.plist */,
+			);
+			path = "AlltrackExample-iMessage";
+			sourceTree = "<group>";
+		};
+		9D01677320FF812B0029CFFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D01677420FF812B0029CFFF /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D01677620FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9D01681120FF88F60029CFFF /* Alltrack */,
+				9D01677720FF812B0029CFFF /* MessagesViewController.h */,
+				9D01677820FF812B0029CFFF /* MessagesViewController.m */,
+				9D01677A20FF812B0029CFFF /* MainInterface.storyboard */,
+				9D01677D20FF812C0029CFFF /* Assets.xcassets */,
+				9D01677F20FF812C0029CFFF /* Info.plist */,
+			);
+			path = "AlltrackExample-iMessage MessagesExtension";
+			sourceTree = "<group>";
+		};
+		9D01681120FF88F60029CFFF /* Alltrack */ = {
+			isa = PBXGroup;
+			children = (
+				9D01681220FF88F60029CFFF /* ALTConfig.h */,
+				9D01681420FF88F60029CFFF /* ALTTimerOnce.m */,
+				9D01681520FF88F60029CFFF /* ALTAttributionHandler.m */,
+				9D01681620FF88F60029CFFF /* Alltrack.h */,
+				9D01681720FF88F60029CFFF /* ALTActivityPackage.h */,
+				9D01681820FF88F60029CFFF /* ALTRequestHandler.m */,
+				9D01681A20FF88F60029CFFF /* ALTAttribution.h */,
+				9D01681C20FF88F60029CFFF /* ALTSdkClickHandler.m */,
+				9D01681D20FF88F60029CFFF /* ALTActivityKind.h */,
+				9D01681E20FF88F60029CFFF /* ALTEvent.m */,
+				9D01681F20FF88F60029CFFF /* ALTPackageHandler.h */,
+				9D01682020FF88F60029CFFF /* ALTPackageBuilder.h */,
+				9D01682120FF88F60029CFFF /* ALTResponseData.h */,
+				9D01682220FF88F60029CFFF /* ALTSessionSuccess.m */,
+				9D01682320FF88F60029CFFF /* ALTEventFailure.m */,
+				9D01682420FF88F60029CFFF /* ALTAlltrackFactory.h */,
+				9D01682520FF88F60029CFFF /* ALTEventSuccess.m */,
+				9D01682620FF88F60029CFFF /* ALTActivityState.m */,
+				9D01682720FF88F60029CFFF /* ALTSessionFailure.m */,
+				9D01682820FF88F60029CFFF /* ALTUtil.h */,
+				9D01682A20FF88F60029CFFF /* ALTActivityHandler.h */,
+				9D01682B20FF88F60029CFFF /* ALTTimerCycle.m */,
+				9D01682C20FF88F60029CFFF /* ALTSessionParameters.m */,
+				9D01682D20FF88F60029CFFF /* ALTLogger.m */,
+				9D01682E20FF88F60029CFFF /* ALTBackoffStrategy.m */,
+				9D01682F20FF88F60029CFFF /* ALTUserDefaults.h */,
+				9D01683020FF88F60029CFFF /* Alltrack.m */,
+				9D01683120FF88F60029CFFF /* ALTAttributionHandler.h */,
+				9D01683220FF88F60029CFFF /* ALTTimerOnce.h */,
+				9D01683420FF88F60029CFFF /* ALTConfig.m */,
+				9D01683520FF88F60029CFFF /* ALTPackageHandler.m */,
+				9D01683620FF88F60029CFFF /* ALTEvent.h */,
+				9D01683720FF88F60029CFFF /* ALTSdkClickHandler.h */,
+				9D01683820FF88F60029CFFF /* ALTActivityKind.m */,
+				9D01683A20FF88F60029CFFF /* ALTAdditions */,
+				9D01684120FF88F60029CFFF /* ALTAttribution.m */,
+				9D01684320FF88F60029CFFF /* ALTRequestHandler.h */,
+				9D01684420FF88F60029CFFF /* ALTActivityPackage.m */,
+				9D01684520FF88F60029CFFF /* ALTUtil.m */,
+				9D01684620FF88F60029CFFF /* ALTSessionFailure.h */,
+				9D01684720FF88F60029CFFF /* ALTActivityState.h */,
+				9D01684820FF88F60029CFFF /* ALTAlltrackFactory.m */,
+				9D01684920FF88F60029CFFF /* ALTEventSuccess.h */,
+				9D01684A20FF88F60029CFFF /* ALTEventFailure.h */,
+				9D01684B20FF88F60029CFFF /* ALTResponseData.m */,
+				9D01684C20FF88F60029CFFF /* ALTSessionSuccess.h */,
+				9D01684D20FF88F60029CFFF /* ALTPackageBuilder.m */,
+				9D01684E20FF88F60029CFFF /* ALTUserDefaults.m */,
+				9D01684F20FF88F60029CFFF /* ALTBackoffStrategy.h */,
+				9D01685020FF88F60029CFFF /* ALTLogger.h */,
+				9D01685120FF88F60029CFFF /* ALTSessionParameters.h */,
+				9D01685320FF88F60029CFFF /* ALTTimerCycle.h */,
+				9D01685420FF88F60029CFFF /* ALTActivityHandler.m */,
+				9D2F24182447DE4700B7CA90 /* ALTSubscription.h */,
+				9D2F24192447DE4700B7CA90 /* ALTSubscription.m */,
+				6FBEE91924E4218B00FEF3F1 /* ALTUrlStrategy.h */,
+				6FBEE91824E4218B00FEF3F1 /* ALTUrlStrategy.m */,
+				6F84514925B1B1F40004C7C0 /* ALTThirdPartySharing.h */,
+				6F84514825B1B1F40004C7C0 /* ALTThirdPartySharing.m */,
+				9D3A2AE52626518E00BD6E44 /* ALTAdRevenue.h */,
+				9D3A2AE62626518E00BD6E44 /* ALTAdRevenue.m */,
+				9DF92DA72630EFC0000FC3FC /* ALTPackageParams.h */,
+				9DF92DA62630EFC0000FC3FC /* ALTPackageParams.m */,
+				6FAB78BB2636DDAE00773869 /* ALTLinkResolution.h */,
+				6FAB78BA2636DDAE00773869 /* ALTLinkResolution.m */,
+				9D49D175290FEC2000042345 /* ALTSKAdNetwork.h */,
+				9D49D176290FEC2000042345 /* ALTSKAdNetwork.m */,
+			);
+			name = Alltrack;
+			path = ../../../Alltrack;
+			sourceTree = "<group>";
+		};
+		9D01683A20FF88F60029CFFF /* ALTAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				9DF38244260E9E2A0033F5A1 /* NSNumber+ALTAdditions.h */,
+				9DF38245260E9E2A0033F5A1 /* NSNumber+ALTAdditions.m */,
+				9D01683B20FF88F60029CFFF /* NSString+ALTAdditions.m */,
+				9D01683D20FF88F60029CFFF /* NSData+ALTAdditions.m */,
+				9D01683E20FF88F60029CFFF /* NSData+ALTAdditions.h */,
+				9D01684020FF88F60029CFFF /* NSString+ALTAdditions.h */,
+			);
+			path = ALTAdditions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D01676420FF81280029CFFF /* AlltrackExample-iMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D01678620FF812C0029CFFF /* Build configuration list for PBXNativeTarget "AlltrackExample-iMessage" */;
+			buildPhases = (
+				9D01676320FF81280029CFFF /* Resources */,
+				9D01678520FF812C0029CFFF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D01677220FF812B0029CFFF /* PBXTargetDependency */,
+			);
+			name = "AlltrackExample-iMessage";
+			productName = "AlltrackExample-iMessage";
+			productReference = 9D01676520FF81280029CFFF /* AlltrackExample-iMessage.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		9D01676E20FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D01678220FF812C0029CFFF /* Build configuration list for PBXNativeTarget "AlltrackExample-iMessage MessagesExtension" */;
+			buildPhases = (
+				9D01676B20FF812B0029CFFF /* Sources */,
+				9D01676C20FF812B0029CFFF /* Frameworks */,
+				9D01676D20FF812B0029CFFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlltrackExample-iMessage MessagesExtension";
+			productName = "AlltrackExample-iMessage MessagesExtension";
+			productReference = 9D01676F20FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D01675F20FF81280029CFFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "Alltrack GmbH";
+				TargetAttributes = {
+					9D01676420FF81280029CFFF = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					9D01676E20FF812B0029CFFF = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 9D01676220FF81280029CFFF /* Build configuration list for PBXProject "AlltrackExample-iMessage" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D01675E20FF81280029CFFF;
+			productRefGroup = 9D01676620FF81280029CFFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D01676420FF81280029CFFF /* AlltrackExample-iMessage */,
+				9D01676E20FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D01676320FF81280029CFFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D01676920FF812B0029CFFF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D01676D20FF812B0029CFFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D01677E20FF812C0029CFFF /* Assets.xcassets in Resources */,
+				9D01677C20FF812B0029CFFF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D01676B20FF812B0029CFFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF92DA82630EFC1000FC3FC /* ALTPackageParams.m in Sources */,
+				9D01685820FF88F60029CFFF /* ALTAttributionHandler.m in Sources */,
+				9D01686120FF88F60029CFFF /* ALTSessionFailure.m in Sources */,
+				9D01686520FF88F60029CFFF /* ALTBackoffStrategy.m in Sources */,
+				9D01677920FF812B0029CFFF /* MessagesViewController.m in Sources */,
+				9D01686F20FF88F60029CFFF /* ALTActivityPackage.m in Sources */,
+				9D01686920FF88F60029CFFF /* ALTActivityKind.m in Sources */,
+				9D01685F20FF88F60029CFFF /* ALTEventSuccess.m in Sources */,
+				9D01685920FF88F60029CFFF /* ALTRequestHandler.m in Sources */,
+				9D01686420FF88F60029CFFF /* ALTLogger.m in Sources */,
+				9D01687020FF88F60029CFFF /* ALTUtil.m in Sources */,
+				9D01685B20FF88F60029CFFF /* ALTSdkClickHandler.m in Sources */,
+				9D01687620FF88F60029CFFF /* ALTActivityHandler.m in Sources */,
+				9D01686720FF88F60029CFFF /* ALTConfig.m in Sources */,
+				6FBEE91A24E4218C00FEF3F1 /* ALTUrlStrategy.m in Sources */,
+				6FAB78BC2636DDAF00773869 /* ALTLinkResolution.m in Sources */,
+				9D01686A20FF88F60029CFFF /* NSString+ALTAdditions.m in Sources */,
+				6F84514A25B1B1F40004C7C0 /* ALTThirdPartySharing.m in Sources */,
+				9D01687120FF88F60029CFFF /* ALTAlltrackFactory.m in Sources */,
+				9D01687220FF88F60029CFFF /* ALTResponseData.m in Sources */,
+				9D01686020FF88F60029CFFF /* ALTActivityState.m in Sources */,
+				9D01687420FF88F60029CFFF /* ALTUserDefaults.m in Sources */,
+				9D01686820FF88F60029CFFF /* ALTPackageHandler.m in Sources */,
+				9D01685E20FF88F60029CFFF /* ALTEventFailure.m in Sources */,
+				9D3A2AE72626518E00BD6E44 /* ALTAdRevenue.m in Sources */,
+				9D01685720FF88F60029CFFF /* ALTTimerOnce.m in Sources */,
+				9D01686220FF88F60029CFFF /* ALTTimerCycle.m in Sources */,
+				9D01686D20FF88F60029CFFF /* ALTAttribution.m in Sources */,
+				9D01686320FF88F60029CFFF /* ALTSessionParameters.m in Sources */,
+				9D01686B20FF88F60029CFFF /* NSData+ALTAdditions.m in Sources */,
+				9D01685C20FF88F60029CFFF /* ALTEvent.m in Sources */,
+				9D01687320FF88F60029CFFF /* ALTPackageBuilder.m in Sources */,
+				9D2F241A2447DE4700B7CA90 /* ALTSubscription.m in Sources */,
+				9DF38246260E9E2A0033F5A1 /* NSNumber+ALTAdditions.m in Sources */,
+				9D01686620FF88F60029CFFF /* Alltrack.m in Sources */,
+				9D49D177290FEC2000042345 /* ALTSKAdNetwork.m in Sources */,
+				9D01685D20FF88F60029CFFF /* ALTSessionSuccess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D01677220FF812B0029CFFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D01676E20FF812B0029CFFF /* AlltrackExample-iMessage MessagesExtension */;
+			targetProxy = 9D01677120FF812B0029CFFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D01677A20FF812B0029CFFF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D01677B20FF812B0029CFFF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D01678020FF812C0029CFFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D01678120FF812C0029CFFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D01678320FF812C0029CFFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QGUGW9AUMK;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"ALLTRACK_IM=1",
+				);
+				INFOPLIST_FILE = "AlltrackExample-iMessage MessagesExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alltrack.examples.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D01678420FF812C0029CFFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QGUGW9AUMK;
+				GCC_PREPROCESSOR_DEFINITIONS = "ALLTRACK_IM=1";
+				INFOPLIST_FILE = "AlltrackExample-iMessage MessagesExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alltrack.examples.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D01678720FF812C0029CFFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QGUGW9AUMK;
+				INFOPLIST_FILE = "AlltrackExample-iMessage/Info.plist";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alltrack.examples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D01678820FF812C0029CFFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QGUGW9AUMK;
+				INFOPLIST_FILE = "AlltrackExample-iMessage/Info.plist";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alltrack.examples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D01676220FF81280029CFFF /* Build configuration list for PBXProject "AlltrackExample-iMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D01678020FF812C0029CFFF /* Debug */,
+				9D01678120FF812C0029CFFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D01678220FF812C0029CFFF /* Build configuration list for PBXNativeTarget "AlltrackExample-iMessage MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D01678320FF812C0029CFFF /* Debug */,
+				9D01678420FF812C0029CFFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D01678620FF812C0029CFFF /* Build configuration list for PBXNativeTarget "AlltrackExample-iMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D01678720FF812C0029CFFF /* Debug */,
+				9D01678820FF812C0029CFFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D01675F20FF81280029CFFF /* Project object */;
+}

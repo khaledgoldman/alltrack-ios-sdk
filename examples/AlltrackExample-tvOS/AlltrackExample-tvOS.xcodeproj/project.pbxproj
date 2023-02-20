@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F84514125B1B1C80004C7C0 /* ALTThirdPartySharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84513F25B1B1C70004C7C0 /* ALTThirdPartySharing.m */; };
+		6FAB78B32636DD8200773869 /* ALTLinkResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB78B22636DD8200773869 /* ALTLinkResolution.m */; };
+		6FBEE91424E4214800FEF3F1 /* ALTUrlStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEE91324E4214800FEF3F1 /* ALTUrlStrategy.m */; };
+		963909B71BCC0D8300A2E8A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 963909B61BCC0D8300A2E8A4 /* main.m */; };
+		963909BA1BCC0D8300A2E8A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 963909B91BCC0D8300A2E8A4 /* AppDelegate.m */; };
+		963909BD1BCC0D8300A2E8A4 /* ViewControllertvOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 963909BC1BCC0D8300A2E8A4 /* ViewControllertvOS.m */; };
+		963909C01BCC0D8300A2E8A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963909BE1BCC0D8300A2E8A4 /* Main.storyboard */; };
+		963909C21BCC0D8300A2E8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963909C11BCC0D8300A2E8A4 /* Assets.xcassets */; };
+		963909D01BCC0DA600A2E8A4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963909CF1BCC0DA600A2E8A4 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9D2F24142447DE1F00B7CA90 /* ALTSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F24122447DE1E00B7CA90 /* ALTSubscription.m */; };
+		9D3A2AE12626515900BD6E44 /* ALTAdRevenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A2AE02626515900BD6E44 /* ALTAdRevenue.m */; };
+		9D449F3F1E6EE6C500E7E80B /* ALTActivityHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449EFE1E6EE6C500E7E80B /* ALTActivityHandler.m */; };
+		9D449F401E6EE6C500E7E80B /* ALTActivityKind.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F001E6EE6C500E7E80B /* ALTActivityKind.m */; };
+		9D449F411E6EE6C500E7E80B /* ALTActivityPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F021E6EE6C500E7E80B /* ALTActivityPackage.m */; };
+		9D449F421E6EE6C500E7E80B /* ALTActivityState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F041E6EE6C500E7E80B /* ALTActivityState.m */; };
+		9D449F431E6EE6C500E7E80B /* NSData+ALTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F071E6EE6C500E7E80B /* NSData+ALTAdditions.m */; };
+		9D449F441E6EE6C500E7E80B /* NSString+ALTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F091E6EE6C500E7E80B /* NSString+ALTAdditions.m */; };
+		9D449F461E6EE6C500E7E80B /* ALTAlltrackFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F0D1E6EE6C500E7E80B /* ALTAlltrackFactory.m */; };
+		9D449F471E6EE6C500E7E80B /* ALTAttribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F0F1E6EE6C500E7E80B /* ALTAttribution.m */; };
+		9D449F481E6EE6C500E7E80B /* ALTAttributionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F111E6EE6C500E7E80B /* ALTAttributionHandler.m */; };
+		9D449F491E6EE6C500E7E80B /* ALTBackoffStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F131E6EE6C500E7E80B /* ALTBackoffStrategy.m */; };
+		9D449F4A1E6EE6C500E7E80B /* ALTConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F151E6EE6C500E7E80B /* ALTConfig.m */; };
+		9D449F4D1E6EE6C500E7E80B /* ALTEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F1B1E6EE6C500E7E80B /* ALTEvent.m */; };
+		9D449F4E1E6EE6C500E7E80B /* ALTEventFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F1D1E6EE6C500E7E80B /* ALTEventFailure.m */; };
+		9D449F4F1E6EE6C500E7E80B /* ALTEventSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F1F1E6EE6C500E7E80B /* ALTEventSuccess.m */; };
+		9D449F511E6EE6C500E7E80B /* ALTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F231E6EE6C500E7E80B /* ALTLogger.m */; };
+		9D449F521E6EE6C500E7E80B /* ALTPackageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F251E6EE6C500E7E80B /* ALTPackageBuilder.m */; };
+		9D449F531E6EE6C500E7E80B /* ALTPackageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F271E6EE6C500E7E80B /* ALTPackageHandler.m */; };
+		9D449F541E6EE6C500E7E80B /* ALTRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F291E6EE6C500E7E80B /* ALTRequestHandler.m */; };
+		9D449F551E6EE6C500E7E80B /* ALTResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F2B1E6EE6C500E7E80B /* ALTResponseData.m */; };
+		9D449F561E6EE6C500E7E80B /* ALTSdkClickHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F2D1E6EE6C500E7E80B /* ALTSdkClickHandler.m */; };
+		9D449F571E6EE6C500E7E80B /* ALTSessionFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F2F1E6EE6C500E7E80B /* ALTSessionFailure.m */; };
+		9D449F581E6EE6C500E7E80B /* ALTSessionParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F311E6EE6C500E7E80B /* ALTSessionParameters.m */; };
+		9D449F591E6EE6C500E7E80B /* ALTSessionSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F331E6EE6C500E7E80B /* ALTSessionSuccess.m */; };
+		9D449F5B1E6EE6C500E7E80B /* ALTTimerCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F371E6EE6C500E7E80B /* ALTTimerCycle.m */; };
+		9D449F5C1E6EE6C500E7E80B /* ALTTimerOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F391E6EE6C500E7E80B /* ALTTimerOnce.m */; };
+		9D449F5D1E6EE6C500E7E80B /* Alltrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F3B1E6EE6C500E7E80B /* Alltrack.m */; };
+		9D449F5E1E6EE6C500E7E80B /* ALTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D449F3D1E6EE6C500E7E80B /* ALTUtil.m */; };
+		9D49D171290FEBFC00042345 /* ALTSKAdNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D49D170290FEBFC00042345 /* ALTSKAdNetwork.m */; };
+		9D5C9632295D96260021602B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5C9631295D96260021602B /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9DC95F2F1C10596500138E4B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC95F2E1C10596500138E4B /* Constants.m */; };
+		9DD0E9CF1F459ECE00B2A759 /* ALTUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD0E9CE1F459ECE00B2A759 /* ALTUserDefaults.m */; };
+		9DF3823D260E9E000033F5A1 /* NSNumber+ALTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF3823C260E9E000033F5A1 /* NSNumber+ALTAdditions.m */; };
+		9DF92DA22630EE75000FC3FC /* ALTPackageParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF92DA12630EE74000FC3FC /* ALTPackageParams.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9DEFCE681DD5CCDE006A10E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6F84513F25B1B1C70004C7C0 /* ALTThirdPartySharing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTThirdPartySharing.m; sourceTree = "<group>"; };
+		6F84514025B1B1C80004C7C0 /* ALTThirdPartySharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTThirdPartySharing.h; sourceTree = "<group>"; };
+		6FAB78B12636DD8200773869 /* ALTLinkResolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTLinkResolution.h; sourceTree = "<group>"; };
+		6FAB78B22636DD8200773869 /* ALTLinkResolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTLinkResolution.m; sourceTree = "<group>"; };
+		6FBEE91224E4214800FEF3F1 /* ALTUrlStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTUrlStrategy.h; sourceTree = "<group>"; };
+		6FBEE91324E4214800FEF3F1 /* ALTUrlStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTUrlStrategy.m; sourceTree = "<group>"; };
+		963909B21BCC0D8300A2E8A4 /* AlltrackExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AlltrackExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		963909B61BCC0D8300A2E8A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		963909B81BCC0D8300A2E8A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		963909B91BCC0D8300A2E8A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		963909BB1BCC0D8300A2E8A4 /* ViewControllertvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllertvOS.h; sourceTree = "<group>"; };
+		963909BC1BCC0D8300A2E8A4 /* ViewControllertvOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllertvOS.m; sourceTree = "<group>"; };
+		963909BF1BCC0D8300A2E8A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		963909C11BCC0D8300A2E8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		963909C31BCC0D8300A2E8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963909CF1BCC0DA600A2E8A4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9D2F24122447DE1E00B7CA90 /* ALTSubscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSubscription.m; sourceTree = "<group>"; };
+		9D2F24132447DE1F00B7CA90 /* ALTSubscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSubscription.h; sourceTree = "<group>"; };
+		9D3A2ADF2626515900BD6E44 /* ALTAdRevenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTAdRevenue.h; sourceTree = "<group>"; };
+		9D3A2AE02626515900BD6E44 /* ALTAdRevenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTAdRevenue.m; sourceTree = "<group>"; };
+		9D449EFD1E6EE6C400E7E80B /* ALTActivityHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTActivityHandler.h; sourceTree = "<group>"; };
+		9D449EFE1E6EE6C500E7E80B /* ALTActivityHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTActivityHandler.m; sourceTree = "<group>"; };
+		9D449EFF1E6EE6C500E7E80B /* ALTActivityKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTActivityKind.h; sourceTree = "<group>"; };
+		9D449F001E6EE6C500E7E80B /* ALTActivityKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTActivityKind.m; sourceTree = "<group>"; };
+		9D449F011E6EE6C500E7E80B /* ALTActivityPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTActivityPackage.h; sourceTree = "<group>"; };
+		9D449F021E6EE6C500E7E80B /* ALTActivityPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTActivityPackage.m; sourceTree = "<group>"; };
+		9D449F031E6EE6C500E7E80B /* ALTActivityState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTActivityState.h; sourceTree = "<group>"; };
+		9D449F041E6EE6C500E7E80B /* ALTActivityState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTActivityState.m; sourceTree = "<group>"; };
+		9D449F061E6EE6C500E7E80B /* NSData+ALTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ALTAdditions.h"; sourceTree = "<group>"; };
+		9D449F071E6EE6C500E7E80B /* NSData+ALTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ALTAdditions.m"; sourceTree = "<group>"; };
+		9D449F081E6EE6C500E7E80B /* NSString+ALTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ALTAdditions.h"; sourceTree = "<group>"; };
+		9D449F091E6EE6C500E7E80B /* NSString+ALTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ALTAdditions.m"; sourceTree = "<group>"; };
+		9D449F0C1E6EE6C500E7E80B /* ALTAlltrackFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTAlltrackFactory.h; sourceTree = "<group>"; };
+		9D449F0D1E6EE6C500E7E80B /* ALTAlltrackFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTAlltrackFactory.m; sourceTree = "<group>"; };
+		9D449F0E1E6EE6C500E7E80B /* ALTAttribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTAttribution.h; sourceTree = "<group>"; };
+		9D449F0F1E6EE6C500E7E80B /* ALTAttribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTAttribution.m; sourceTree = "<group>"; };
+		9D449F101E6EE6C500E7E80B /* ALTAttributionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTAttributionHandler.h; sourceTree = "<group>"; };
+		9D449F111E6EE6C500E7E80B /* ALTAttributionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTAttributionHandler.m; sourceTree = "<group>"; };
+		9D449F121E6EE6C500E7E80B /* ALTBackoffStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTBackoffStrategy.h; sourceTree = "<group>"; };
+		9D449F131E6EE6C500E7E80B /* ALTBackoffStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTBackoffStrategy.m; sourceTree = "<group>"; };
+		9D449F141E6EE6C500E7E80B /* ALTConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTConfig.h; sourceTree = "<group>"; };
+		9D449F151E6EE6C500E7E80B /* ALTConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTConfig.m; sourceTree = "<group>"; };
+		9D449F1A1E6EE6C500E7E80B /* ALTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTEvent.h; sourceTree = "<group>"; };
+		9D449F1B1E6EE6C500E7E80B /* ALTEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTEvent.m; sourceTree = "<group>"; };
+		9D449F1C1E6EE6C500E7E80B /* ALTEventFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTEventFailure.h; sourceTree = "<group>"; };
+		9D449F1D1E6EE6C500E7E80B /* ALTEventFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTEventFailure.m; sourceTree = "<group>"; };
+		9D449F1E1E6EE6C500E7E80B /* ALTEventSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTEventSuccess.h; sourceTree = "<group>"; };
+		9D449F1F1E6EE6C500E7E80B /* ALTEventSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTEventSuccess.m; sourceTree = "<group>"; };
+		9D449F221E6EE6C500E7E80B /* ALTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTLogger.h; sourceTree = "<group>"; };
+		9D449F231E6EE6C500E7E80B /* ALTLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTLogger.m; sourceTree = "<group>"; };
+		9D449F241E6EE6C500E7E80B /* ALTPackageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTPackageBuilder.h; sourceTree = "<group>"; };
+		9D449F251E6EE6C500E7E80B /* ALTPackageBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTPackageBuilder.m; sourceTree = "<group>"; };
+		9D449F261E6EE6C500E7E80B /* ALTPackageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTPackageHandler.h; sourceTree = "<group>"; };
+		9D449F271E6EE6C500E7E80B /* ALTPackageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTPackageHandler.m; sourceTree = "<group>"; };
+		9D449F281E6EE6C500E7E80B /* ALTRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTRequestHandler.h; sourceTree = "<group>"; };
+		9D449F291E6EE6C500E7E80B /* ALTRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTRequestHandler.m; sourceTree = "<group>"; };
+		9D449F2A1E6EE6C500E7E80B /* ALTResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTResponseData.h; sourceTree = "<group>"; };
+		9D449F2B1E6EE6C500E7E80B /* ALTResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTResponseData.m; sourceTree = "<group>"; };
+		9D449F2C1E6EE6C500E7E80B /* ALTSdkClickHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSdkClickHandler.h; sourceTree = "<group>"; };
+		9D449F2D1E6EE6C500E7E80B /* ALTSdkClickHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSdkClickHandler.m; sourceTree = "<group>"; };
+		9D449F2E1E6EE6C500E7E80B /* ALTSessionFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSessionFailure.h; sourceTree = "<group>"; };
+		9D449F2F1E6EE6C500E7E80B /* ALTSessionFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSessionFailure.m; sourceTree = "<group>"; };
+		9D449F301E6EE6C500E7E80B /* ALTSessionParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSessionParameters.h; sourceTree = "<group>"; };
+		9D449F311E6EE6C500E7E80B /* ALTSessionParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSessionParameters.m; sourceTree = "<group>"; };
+		9D449F321E6EE6C500E7E80B /* ALTSessionSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSessionSuccess.h; sourceTree = "<group>"; };
+		9D449F331E6EE6C500E7E80B /* ALTSessionSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSessionSuccess.m; sourceTree = "<group>"; };
+		9D449F361E6EE6C500E7E80B /* ALTTimerCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTTimerCycle.h; sourceTree = "<group>"; };
+		9D449F371E6EE6C500E7E80B /* ALTTimerCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTTimerCycle.m; sourceTree = "<group>"; };
+		9D449F381E6EE6C500E7E80B /* ALTTimerOnce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTTimerOnce.h; sourceTree = "<group>"; };
+		9D449F391E6EE6C500E7E80B /* ALTTimerOnce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTTimerOnce.m; sourceTree = "<group>"; };
+		9D449F3A1E6EE6C500E7E80B /* Alltrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alltrack.h; sourceTree = "<group>"; };
+		9D449F3B1E6EE6C500E7E80B /* Alltrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alltrack.m; sourceTree = "<group>"; };
+		9D449F3C1E6EE6C500E7E80B /* ALTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTUtil.h; sourceTree = "<group>"; };
+		9D449F3D1E6EE6C500E7E80B /* ALTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTUtil.m; sourceTree = "<group>"; };
+		9D49D16F290FEBFC00042345 /* ALTSKAdNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTSKAdNetwork.h; sourceTree = "<group>"; };
+		9D49D170290FEBFC00042345 /* ALTSKAdNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTSKAdNetwork.m; sourceTree = "<group>"; };
+		9D5C9631295D96260021602B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9DC95F2D1C10596500138E4B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9DC95F2E1C10596500138E4B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		9DD0E9CD1F459ECE00B2A759 /* ALTUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTUserDefaults.h; sourceTree = "<group>"; };
+		9DD0E9CE1F459ECE00B2A759 /* ALTUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTUserDefaults.m; sourceTree = "<group>"; };
+		9DF3823B260E9E000033F5A1 /* NSNumber+ALTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ALTAdditions.h"; sourceTree = "<group>"; };
+		9DF3823C260E9E000033F5A1 /* NSNumber+ALTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ALTAdditions.m"; sourceTree = "<group>"; };
+		9DF92DA02630EE74000FC3FC /* ALTPackageParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTPackageParams.h; sourceTree = "<group>"; };
+		9DF92DA12630EE74000FC3FC /* ALTPackageParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTPackageParams.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		963909AF1BCC0D8300A2E8A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963909D01BCC0DA600A2E8A4 /* AdSupport.framework in Frameworks */,
+				9D5C9632295D96260021602B /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		963909A91BCC0D8300A2E8A4 = {
+			isa = PBXGroup;
+			children = (
+				963909B41BCC0D8300A2E8A4 /* AlltrackExample-tvOS */,
+				963909B31BCC0D8300A2E8A4 /* Products */,
+				9D5C9630295D96250021602B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		963909B31BCC0D8300A2E8A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				963909B21BCC0D8300A2E8A4 /* AlltrackExample-tvOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		963909B41BCC0D8300A2E8A4 /* AlltrackExample-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				9DC95F2D1C10596500138E4B /* Constants.h */,
+				9DC95F2E1C10596500138E4B /* Constants.m */,
+				963909B81BCC0D8300A2E8A4 /* AppDelegate.h */,
+				963909B91BCC0D8300A2E8A4 /* AppDelegate.m */,
+				963909BB1BCC0D8300A2E8A4 /* ViewControllertvOS.h */,
+				963909BC1BCC0D8300A2E8A4 /* ViewControllertvOS.m */,
+				963909BE1BCC0D8300A2E8A4 /* Main.storyboard */,
+				963909C11BCC0D8300A2E8A4 /* Assets.xcassets */,
+				963909C31BCC0D8300A2E8A4 /* Info.plist */,
+				963909B51BCC0D8300A2E8A4 /* Supporting Files */,
+			);
+			path = "AlltrackExample-tvOS";
+			sourceTree = "<group>";
+		};
+		963909B51BCC0D8300A2E8A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D449EFC1E6EE6C400E7E80B /* Alltrack */,
+				9DF7ACCA1CB50DB700D3591F /* Frameworks */,
+				963909B61BCC0D8300A2E8A4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D449EFC1E6EE6C400E7E80B /* Alltrack */ = {
+			isa = PBXGroup;
+			children = (
+				9D449F051E6EE6C500E7E80B /* ALTAdditions */,
+				9D449EFD1E6EE6C400E7E80B /* ALTActivityHandler.h */,
+				9D449EFE1E6EE6C500E7E80B /* ALTActivityHandler.m */,
+				9D449EFF1E6EE6C500E7E80B /* ALTActivityKind.h */,
+				9D449F001E6EE6C500E7E80B /* ALTActivityKind.m */,
+				9D449F011E6EE6C500E7E80B /* ALTActivityPackage.h */,
+				9D449F021E6EE6C500E7E80B /* ALTActivityPackage.m */,
+				9D449F031E6EE6C500E7E80B /* ALTActivityState.h */,
+				9D449F041E6EE6C500E7E80B /* ALTActivityState.m */,
+				9D449F0C1E6EE6C500E7E80B /* ALTAlltrackFactory.h */,
+				9D449F0D1E6EE6C500E7E80B /* ALTAlltrackFactory.m */,
+				9D449F0E1E6EE6C500E7E80B /* ALTAttribution.h */,
+				9D449F0F1E6EE6C500E7E80B /* ALTAttribution.m */,
+				9D449F101E6EE6C500E7E80B /* ALTAttributionHandler.h */,
+				9D449F111E6EE6C500E7E80B /* ALTAttributionHandler.m */,
+				9D449F121E6EE6C500E7E80B /* ALTBackoffStrategy.h */,
+				9D449F131E6EE6C500E7E80B /* ALTBackoffStrategy.m */,
+				9D449F141E6EE6C500E7E80B /* ALTConfig.h */,
+				9D449F151E6EE6C500E7E80B /* ALTConfig.m */,
+				9D449F1A1E6EE6C500E7E80B /* ALTEvent.h */,
+				9D449F1B1E6EE6C500E7E80B /* ALTEvent.m */,
+				9D449F1C1E6EE6C500E7E80B /* ALTEventFailure.h */,
+				9D449F1D1E6EE6C500E7E80B /* ALTEventFailure.m */,
+				9D449F1E1E6EE6C500E7E80B /* ALTEventSuccess.h */,
+				9D449F1F1E6EE6C500E7E80B /* ALTEventSuccess.m */,
+				9D449F221E6EE6C500E7E80B /* ALTLogger.h */,
+				9D449F231E6EE6C500E7E80B /* ALTLogger.m */,
+				9D449F241E6EE6C500E7E80B /* ALTPackageBuilder.h */,
+				9D449F251E6EE6C500E7E80B /* ALTPackageBuilder.m */,
+				9DF92DA02630EE74000FC3FC /* ALTPackageParams.h */,
+				9DF92DA12630EE74000FC3FC /* ALTPackageParams.m */,
+				9D449F261E6EE6C500E7E80B /* ALTPackageHandler.h */,
+				9D449F271E6EE6C500E7E80B /* ALTPackageHandler.m */,
+				9D449F281E6EE6C500E7E80B /* ALTRequestHandler.h */,
+				9D449F291E6EE6C500E7E80B /* ALTRequestHandler.m */,
+				9D449F2A1E6EE6C500E7E80B /* ALTResponseData.h */,
+				9D449F2B1E6EE6C500E7E80B /* ALTResponseData.m */,
+				9D449F2C1E6EE6C500E7E80B /* ALTSdkClickHandler.h */,
+				9D449F2D1E6EE6C500E7E80B /* ALTSdkClickHandler.m */,
+				9D449F2E1E6EE6C500E7E80B /* ALTSessionFailure.h */,
+				9D449F2F1E6EE6C500E7E80B /* ALTSessionFailure.m */,
+				9D449F301E6EE6C500E7E80B /* ALTSessionParameters.h */,
+				9D449F311E6EE6C500E7E80B /* ALTSessionParameters.m */,
+				9D449F321E6EE6C500E7E80B /* ALTSessionSuccess.h */,
+				9D449F331E6EE6C500E7E80B /* ALTSessionSuccess.m */,
+				9D449F361E6EE6C500E7E80B /* ALTTimerCycle.h */,
+				9D449F371E6EE6C500E7E80B /* ALTTimerCycle.m */,
+				9D449F381E6EE6C500E7E80B /* ALTTimerOnce.h */,
+				9D449F391E6EE6C500E7E80B /* ALTTimerOnce.m */,
+				9D449F3A1E6EE6C500E7E80B /* Alltrack.h */,
+				9D449F3B1E6EE6C500E7E80B /* Alltrack.m */,
+				9D449F3C1E6EE6C500E7E80B /* ALTUtil.h */,
+				9D449F3D1E6EE6C500E7E80B /* ALTUtil.m */,
+				9DD0E9CD1F459ECE00B2A759 /* ALTUserDefaults.h */,
+				9DD0E9CE1F459ECE00B2A759 /* ALTUserDefaults.m */,
+				9D2F24132447DE1F00B7CA90 /* ALTSubscription.h */,
+				9D2F24122447DE1E00B7CA90 /* ALTSubscription.m */,
+				6FBEE91224E4214800FEF3F1 /* ALTUrlStrategy.h */,
+				6FBEE91324E4214800FEF3F1 /* ALTUrlStrategy.m */,
+				6F84514025B1B1C80004C7C0 /* ALTThirdPartySharing.h */,
+				6F84513F25B1B1C70004C7C0 /* ALTThirdPartySharing.m */,
+				9D3A2ADF2626515900BD6E44 /* ALTAdRevenue.h */,
+				9D3A2AE02626515900BD6E44 /* ALTAdRevenue.m */,
+				6FAB78B12636DD8200773869 /* ALTLinkResolution.h */,
+				6FAB78B22636DD8200773869 /* ALTLinkResolution.m */,
+				9D49D16F290FEBFC00042345 /* ALTSKAdNetwork.h */,
+				9D49D170290FEBFC00042345 /* ALTSKAdNetwork.m */,
+			);
+			name = Alltrack;
+			path = ../../../Alltrack;
+			sourceTree = "<group>";
+		};
+		9D449F051E6EE6C500E7E80B /* ALTAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				9DF3823B260E9E000033F5A1 /* NSNumber+ALTAdditions.h */,
+				9DF3823C260E9E000033F5A1 /* NSNumber+ALTAdditions.m */,
+				9D449F061E6EE6C500E7E80B /* NSData+ALTAdditions.h */,
+				9D449F071E6EE6C500E7E80B /* NSData+ALTAdditions.m */,
+				9D449F081E6EE6C500E7E80B /* NSString+ALTAdditions.h */,
+				9D449F091E6EE6C500E7E80B /* NSString+ALTAdditions.m */,
+			);
+			path = ALTAdditions;
+			sourceTree = "<group>";
+		};
+		9D5C9630295D96250021602B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D5C9631295D96260021602B /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DF7ACCA1CB50DB700D3591F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				963909CF1BCC0DA600A2E8A4 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		963909B11BCC0D8300A2E8A4 /* AlltrackExample-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963909C61BCC0D8300A2E8A4 /* Build configuration list for PBXNativeTarget "AlltrackExample-tvOS" */;
+			buildPhases = (
+				963909AE1BCC0D8300A2E8A4 /* Sources */,
+				963909AF1BCC0D8300A2E8A4 /* Frameworks */,
+				963909B01BCC0D8300A2E8A4 /* Resources */,
+				9DEFCE681DD5CCDE006A10E6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlltrackExample-tvOS";
+			productName = "AlltrackExample-tvOS";
+			productReference = 963909B21BCC0D8300A2E8A4 /* AlltrackExample-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		963909AA1BCC0D8300A2E8A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "Alltrack GmbH";
+				TargetAttributes = {
+					963909B11BCC0D8300A2E8A4 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = QGUGW9AUMK;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.appletvos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 963909AD1BCC0D8300A2E8A4 /* Build configuration list for PBXProject "AlltrackExample-tvOS" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 963909A91BCC0D8300A2E8A4;
+			productRefGroup = 963909B31BCC0D8300A2E8A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				963909B11BCC0D8300A2E8A4 /* AlltrackExample-tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		963909B01BCC0D8300A2E8A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963909C21BCC0D8300A2E8A4 /* Assets.xcassets in Resources */,
+				963909C01BCC0D8300A2E8A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		963909AE1BCC0D8300A2E8A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D449F561E6EE6C500E7E80B /* ALTSdkClickHandler.m in Sources */,
+				9D449F441E6EE6C500E7E80B /* NSString+ALTAdditions.m in Sources */,
+				9D449F4F1E6EE6C500E7E80B /* ALTEventSuccess.m in Sources */,
+				9D3A2AE12626515900BD6E44 /* ALTAdRevenue.m in Sources */,
+				9D449F5B1E6EE6C500E7E80B /* ALTTimerCycle.m in Sources */,
+				9D449F471E6EE6C500E7E80B /* ALTAttribution.m in Sources */,
+				9DF3823D260E9E000033F5A1 /* NSNumber+ALTAdditions.m in Sources */,
+				9D2F24142447DE1F00B7CA90 /* ALTSubscription.m in Sources */,
+				6F84514125B1B1C80004C7C0 /* ALTThirdPartySharing.m in Sources */,
+				9D449F421E6EE6C500E7E80B /* ALTActivityState.m in Sources */,
+				9DC95F2F1C10596500138E4B /* Constants.m in Sources */,
+				963909BD1BCC0D8300A2E8A4 /* ViewControllertvOS.m in Sources */,
+				963909BA1BCC0D8300A2E8A4 /* AppDelegate.m in Sources */,
+				9D449F4A1E6EE6C500E7E80B /* ALTConfig.m in Sources */,
+				9D449F571E6EE6C500E7E80B /* ALTSessionFailure.m in Sources */,
+				6FAB78B32636DD8200773869 /* ALTLinkResolution.m in Sources */,
+				9DD0E9CF1F459ECE00B2A759 /* ALTUserDefaults.m in Sources */,
+				9D449F5E1E6EE6C500E7E80B /* ALTUtil.m in Sources */,
+				9D449F4E1E6EE6C500E7E80B /* ALTEventFailure.m in Sources */,
+				9D449F461E6EE6C500E7E80B /* ALTAlltrackFactory.m in Sources */,
+				9D449F3F1E6EE6C500E7E80B /* ALTActivityHandler.m in Sources */,
+				9D449F5C1E6EE6C500E7E80B /* ALTTimerOnce.m in Sources */,
+				9D449F401E6EE6C500E7E80B /* ALTActivityKind.m in Sources */,
+				9D449F481E6EE6C500E7E80B /* ALTAttributionHandler.m in Sources */,
+				9D449F541E6EE6C500E7E80B /* ALTRequestHandler.m in Sources */,
+				9DF92DA22630EE75000FC3FC /* ALTPackageParams.m in Sources */,
+				9D449F4D1E6EE6C500E7E80B /* ALTEvent.m in Sources */,
+				963909B71BCC0D8300A2E8A4 /* main.m in Sources */,
+				6FBEE91424E4214800FEF3F1 /* ALTUrlStrategy.m in Sources */,
+				9D449F491E6EE6C500E7E80B /* ALTBackoffStrategy.m in Sources */,
+				9D449F581E6EE6C500E7E80B /* ALTSessionParameters.m in Sources */,
+				9D49D171290FEBFC00042345 /* ALTSKAdNetwork.m in Sources */,
+				9D449F521E6EE6C500E7E80B /* ALTPackageBuilder.m in Sources */,
+				9D449F591E6EE6C500E7E80B /* ALTSessionSuccess.m in Sources */,
+				9D449F511E6EE6C500E7E80B /* ALTLogger.m in Sources */,
+				9D449F551E6EE6C500E7E80B /* ALTResponseData.m in Sources */,
+				9D449F531E6EE6C500E7E80B /* ALTPackageHandler.m in Sources */,
+				9D449F431E6EE6C500E7E80B /* NSData+ALTAdditions.m in Sources */,
+				9D449F5D1E6EE6C500E7E80B /* Alltrack.m in Sources */,
+				9D449F411E6EE6C500E7E80B /* ALTActivityPackage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		963909BE1BCC0D8300A2E8A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				963909BF1BCC0D8300A2E8A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		963909C41BCC0D8300A2E8A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		963909C51BCC0D8300A2E8A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		963909C71BCC0D8300A2E8A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QGUGW9AUMK;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "AlltrackExample-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alltrack.examples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		963909C81BCC0D8300A2E8A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QGUGW9AUMK;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "AlltrackExample-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alltrack.examples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		963909AD1BCC0D8300A2E8A4 /* Build configuration list for PBXProject "AlltrackExample-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963909C41BCC0D8300A2E8A4 /* Debug */,
+				963909C51BCC0D8300A2E8A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		963909C61BCC0D8300A2E8A4 /* Build configuration list for PBXNativeTarget "AlltrackExample-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963909C71BCC0D8300A2E8A4 /* Debug */,
+				963909C81BCC0D8300A2E8A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 963909AA1BCC0D8300A2E8A4 /* Project object */;
+}

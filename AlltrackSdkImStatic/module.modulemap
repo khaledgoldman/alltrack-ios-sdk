@@ -1,0 +1,6 @@
+framework module AlltrackSdkIm {
+  umbrella header "AlltrackSdkIm.h"
+
+  export *
+  module * { export * }
+}

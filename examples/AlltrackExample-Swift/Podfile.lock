@@ -1,0 +1,18 @@
+PODS:
+  - Alltrack (4.33.4):
+    - Alltrack/Core (= 4.33.4)
+  - Alltrack/Core (4.33.4)
+
+DEPENDENCIES:
+  - Alltrack (from `../../`)
+
+EXTERNAL SOURCES:
+  Alltrack:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  Alltrack: 4690e07ea401ee56d4d3f4f5bdad86c94f51903f
+
+PODFILE CHECKSUM: 4c79da456db9adb90cdd42adc7f721c7bb6490cd
+
+COCOAPODS: 1.11.3
